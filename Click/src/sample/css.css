@@ -1,0 +1,7 @@
+.button {
+     -fx-font-size: 12px;
+     -fx-border-color: #9EDEF9;
+ }
+ .label {
+     -fx-text-fill: #000000;
+ }

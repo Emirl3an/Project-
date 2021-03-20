@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import java.net.URL?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #9EDEF9;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <stylesheets>
+        <URL value="@css.css" />
+    </stylesheets>
+    <children>
+      <AnchorPane prefHeight="500.0" prefWidth="82.0" style="-fx-background-color: #ABFBFF;" />
+      <MenuBar id="btn_import" prefHeight="26.0" prefWidth="500.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#onClick_btn_import" text="Open" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Font1" text="Font:30" />
+                <MenuItem mnemonicParsing="false" onAction="#Font2" text="Font:20" />
+                <MenuItem mnemonicParsing="false" onAction="#Font3" text="Font:10" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#About" text="About" />
+                <MenuItem mnemonicParsing="false" onAction="#About_U" text="Info Un" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="btn_save" layoutX="46.0" layoutY="433.0" mnemonicParsing="false" onAction="#onClick_btn_save" prefHeight="26.0" prefWidth="71.0" text="Save" />
+      <TextArea fx:id="ta" layoutX="17.0" layoutY="90.0" prefHeight="320.0" prefWidth="466.0" />
+      <Button fx:id="btn_arial" layoutX="407.0" layoutY="34.0" mnemonicParsing="false" onAction="#Arial" prefHeight="26.0" prefWidth="65.0" text="Arial" textFill="#111111" />
+      <Button fx:id="btn_tahoma" layoutX="340.0" layoutY="34.0" mnemonicParsing="false" onAction="#Tahoma" prefHeight="26.0" prefWidth="66.0" text="Tahoma" />
+      <Button fx:id="btn_verdana" layoutX="273.0" layoutY="34.0" mnemonicParsing="false" onAction="#Verdana" prefHeight="26.0" prefWidth="66.0" text="Verdana" />
+      <Button fx:id="btn_exit" layoutX="404.0" layoutY="433.0" mnemonicParsing="false" onAction="#onClick_btn_exit" prefHeight="26.0" prefWidth="71.0" text="Exit" />
+   </children>
+</AnchorPane>
